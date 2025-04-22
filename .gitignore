@@ -1,0 +1,23 @@
+# Node.js 相关
+node_modules/
+.next/
+dist/
+
+# Go 编译输出
+*.exe
+*.out
+*.test
+bin/
+
+# 编译缓存 & 临时文件
+*.log
+*.tmp
+
+# IDE 配置文件
+.vscode/
+.idea/
+
+# 环境配置（建议手动配置、不上传）
+.env
+.env.local
+config.json
