@@ -368,7 +368,7 @@ export default function Home() {
     <div>
       <h2 style={sectionTitleStyle}>表单式计算器</h2>
       <div style={formContainerStyle}>
-        <form onSubmit={handleFormCalculate}>
+        <form onSubmit={handleFormCalculate} role="form">
           <div style={formGroupStyle}>
             <label style={formLabelStyle}>第一个数字:</label>
             <input 
