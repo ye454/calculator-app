@@ -1,23 +1,37 @@
-# Node.js 相关
-node_modules/
-.next/
-dist/
+# 通用
+.DS_Store
+Thumbs.db
 
-# Go 编译输出
-*.exe
-*.out
-*.test
-bin/
+# Node.js 前端忽略
+frontend/node_modules/
+frontend/.next/
+frontend/dist/
+frontend/.env
+frontend/.env.local
 
-# 编译缓存 & 临时文件
+# TypeScript 编译缓存
+*.tsbuildinfo
+
+# Go 后端忽略
+backend/bin/
+backend/*.exe
+backend/*.out
+backend/*.test
+
+# Go 缓存
 *.log
 *.tmp
 
-# IDE 配置文件
+# Buf/生成代码缓存（你可以选择性忽略）
+backend/gen/
+frontend/gen/
+
+# IDE、系统相关
 .vscode/
 .idea/
+*.swp
+*.bak
 
-# 环境配置（建议手动配置、不上传）
-.env
-.env.local
-config.json
+# OS/Temp
+*.~*
+*~
